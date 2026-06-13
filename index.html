@@ -3,49 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>聲威足球會 Sing Wai Football Club — Red Remastered</title>
-  <meta name="description" content="A red-tone bilingual remaster of the archived 1997 Sing Wai Football Club website, with the available original content reorganised and translated.">
+  <title>首頁 — 聲威足球會</title>
+  <meta name="description" content="聲威足球會新版重製網站">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;600;700;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="v2">
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
+  <header class="site-header v2-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Sing Wai Football Club home">
+      <a class="brand" href="index.html" aria-label="Sing Wai Football Club home">
         <img src="assets/sw-logo.png" alt="Sing Wai Football Club logo" width="58" height="58">
-        <span><strong>聲威足球會</strong><small>Sing Wai FC · Red Remaster</small></span>
+        <span><strong>聲威足球會</strong><small>Sing Wai FC · Curated Remaster</small></span>
       </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#entrance">入口</a>
-        <a href="#club">球會</a>
-        <a href="#members">會員</a>
-        <a href="#challenges">挑戰賽</a>
-        <a href="#links">推介</a>
-        <a href="#guestbook">簽名簿</a>
-        <a href="#sources">來源</a>
+      <nav class="nav v2-nav" aria-label="Main navigation">
+        <a href="index.html" class="active"><span>首頁</span><small>Home</small></a>
+<a href="club.html" class=""><span>球會故事</span><small>Club</small></a>
+<a href="members.html" class=""><span>會員名冊</span><small>Members</small></a>
+<a href="records.html" class=""><span>球會戰績</span><small>Records</small></a>
+<a href="prediction.html" class=""><span>估波挑戰賽</span><small>Prediction</small></a>
+<a href="horse.html" class=""><span>射馬人挑戰賽</span><small>Horse</small></a>
+<a href="retro.html" class=""><span>懷舊角落</span><small>Retro</small></a>
+<a href="archive.html" class=""><span>舊頁全集</span><small>Archive</small></a>
       </nav>
     </div>
   </header>
-
   <main id="main">
-    <section id="top" class="hero">
+
+    <section class="v2-hero">
       <div class="hero-art" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">1997 GeoCities archive · Hong Kong amateur football · bilingual remake</p>
+      <div class="container v2-hero-grid">
+        <div>
+          <p class="eyebrow">1997 GeoCities archive · curated red remaster · privacy-safe public edition</p>
           <h1>聲威足球會<br><span>Sing Wai Football Club</span></h1>
-          <p class="lede zh">紅色主調新版：保留九十年代個人網頁味道，同時將可讀到嘅原站內容整理成中英對照。</p>
-          <p class="lede en">A red-tone remaster that keeps the 1990s homepage spirit while reorganising the recoverable archive content in Chinese and English.</p>
+          <p class="lede zh">舊站內容重新策展：球會故事、會員、戰績、估波、射馬同懷舊元素，全部拆開成新版流程。</p>
+          <p class="lede en">The old site has been reorganised into a modern, multi-page memorial website instead of a raw archive dump.</p>
+          <blockquote class="signature-quote">
+            <p>冇會長、冇文書、冇幹事。靠一班會員定期約出嚟踢波，聲威就係咁樣維持落去。</p>
+          </blockquote>
           <div class="hero-actions">
-            <a class="btn primary" href="#entrance">進入新版 ENTER</a>
-            <a class="btn ghost" href="https://www.oocities.org/colosseum/8433/" rel="noopener">原版 Archive</a>
+            <a class="btn primary" href="club.html">開始睇球會故事</a>
+            <a class="btn ghost" href="archive.html">查看舊頁全集</a>
           </div>
         </div>
-        <div class="hero-card" aria-label="Remastered crest and archive note">
-          <img src="assets/sw-logo.png" alt="Sing Wai Football Club club logo">
+        <div class="hero-card logo-feature">
+          <img src="assets/sw-logo.png" alt="Sing Wai Football Club logo">
           <div class="retro-window">
             <div class="window-dots"><span></span><span></span><span></span></div>
             <p>Best viewed with a modern browser — spiritually compatible with Netscape 3.0.</p>
@@ -54,418 +58,92 @@
       </div>
     </section>
 
-    <section id="entrance" class="section entrance">
+    <section class="section muted">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Site journey / 網站流程</p>
+          <h2>由舊內容，變成一個重新策展嘅紀念網站</h2>
+        </div>
+        <div class="journey-grid">
+          
+          <a class="journey-card" href="club.html">
+            <span>Club Story</span>
+            <strong>球會故事</strong>
+            <p>冇會長、冇文書、冇幹事；靠星期三踢波同友情維繫。</p>
+          </a>
+
+          <a class="journey-card" href="members.html">
+            <span>Members</span>
+            <strong>會員名冊</strong>
+            <p>15 位會員球員卡，姓名已遮蔽、email 已移除。</p>
+          </a>
+
+          <a class="journey-card" href="records.html">
+            <span>Records</span>
+            <strong>球會戰績</strong>
+            <p>杯賽、邀請賽、七人賽同歷年成績整理。</p>
+          </a>
+
+          <a class="journey-card" href="prediction.html">
+            <span>Prediction</span>
+            <strong>估波挑戰賽</strong>
+            <p>97/98、98/99 估波排名、降班隊、盃賽玩法。</p>
+          </a>
+
+          <a class="journey-card" href="horse.html">
+            <span>Horse Challenge</span>
+            <strong>射馬人挑戰賽</strong>
+            <p>大贏家精選、勝負數簿、威水史與 96/97 回顧。</p>
+          </a>
+
+          <a class="journey-card" href="retro.html">
+            <span>Retro Corner</span>
+            <strong>懷舊角落</strong>
+            <p>MIDI、Guestbook、Netscape 提示與九十年代網頁味道。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section red-band">
       <div class="container split">
         <div>
-          <p class="section-kicker">Original entrance / 原版入口</p>
-          <h2>由一個「ENTER」開始嘅九十年代球會網頁</h2>
-          <div class="quote-card">
-            <div class="entrance-logo-wrap"><img class="entrance-logo" src="assets/sw-logo.png" alt="Sing Wai Football Club logo"><p class="old-line">聲威足球會 LOGO · 聲威足球會 · Sing Wai Football Club · ENTER</p></div>
-            <p class="old-line">This site is best viewed with Netscape 3.0 or Internet Explorer 3.0 or above.</p>
-            <p class="old-line">Created by Sing Wai Computing Group ©1997</p>
-          </div>
+          <p class="section-kicker">What changed / 今次 V2 改法</p>
+          <h2>唔再只係包住舊 HTML，而係重組內容</h2>
+          <p class="zh">舊頁全集仍然保留，但主要網站已改成多頁流程：首頁做入口、球會故事做敘事、會員變球員卡、戰績變 trophy cards、估波同射馬各自成為活動頁。</p>
+          <p class="en">The raw converted archive is still there, but the main website now presents the old content through modern pages, cards, timelines, records and activity sections.</p>
         </div>
-        <div class="translation-card">
-          <h3>English translation</h3>
-          <p>The original landing page presented the club logo, the title “Sing Wai Football Club”, a simple “ENTER” link, and a classic browser-compatibility notice for Netscape and Internet Explorer.</p>
-          <p>The remake keeps that doorway feeling, but turns it into a clean, responsive home page.</p>
+        <div class="stat-panel">
+          <div><strong>18</strong><span>舊頁轉換版</span></div>
+          <div><strong>15</strong><span>會員球員卡</span></div>
+          <div><strong>2</strong><span>主要活動線</span></div>
         </div>
       </div>
     </section>
 
-    <section id="club" class="section muted">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-kicker">Club profile / 球會簡介</p>
-          <h2>聲威唔係靠架構，而係靠一班人逢星期三踢波維繫</h2>
-        </div>
-        <div class="content-grid two">
-          <article class="content-card">
-            <h3>球會簡介</h3>
-            <p class="zh">原頁形容聲威係一個好非正式嘅球會：冇會長、冇文書、冇幹事，主要由會員同一個類似財政嘅人處理球會錢銀。球會「成年都唔開一次會」，重點係會員定期約出嚟踢波。</p>
-            <p class="en">The archived profile describes Sing Wai as an informal club: no president, secretary or committee, only members and a treasurer-like person handling the money. It was less about administration and more about people regularly meeting to play football.</p>
-          </article>
-          <article class="content-card accent">
-            <h3>球會精神</h3>
-            <p class="zh">可讀到嘅原文語氣好有朋友味：唔係一個制度化組織，而係一班人用「義氣」、友情同星期三踢波去維持球會生命。</p>
-            <p class="en">The tone is friendly and proudly informal: a club held together by loyalty, friendship and the rhythm of Wednesday football.</p>
-          </article>
-        </div>
-
-        <div class="timeline-wrap">
-          <h3>聲威近況 / Club updates</h3>
-          <div class="timeline">
-            <article>
-              <time>1998-05-09</time>
-              <h4>出戰總會盃足球賽</h4>
-              <p class="zh">原頁記錄九八年五月九日（星期六）聲威將會出戰總會盃足球賽；賽事以分組單循環進行，亦寫到「是日聲威首次出戰力爭佳績」。</p>
-              <p class="en">The archive says Sing Wai would play in a cup competition on Saturday, 9 May 1998, using a group round-robin format. It also notes the team was making its first appearance and aiming for a good result.</p>
-            </article>
-            <article>
-              <time>1998 archive</time>
-              <h4>其他杯賽更新</h4>
-              <p class="zh">搜尋索引亦顯示原頁列出多項杯賽進展，例如保健盃、反斗盃七人足球賽、十六強、八強、四強及決賽等項目；但原 HTML 直開 timeout，部分舊 Big5 文字喺索引入面變成亂碼，所以呢版先保留可讀項目同原頁連結。</p>
-              <p class="en">Search snippets also show further tournament updates, including items around cup knockout rounds such as last-16, quarter-final, semi-final and final reports. Because the original HTML times out and the indexed Chinese is partly garbled, this remake preserves the readable structure and links back to the source.</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="records-panel">
-          <div>
-            <p class="section-kicker">Records / 球會戰績</p>
-            <h3>原頁列出嘅戰績類別</h3>
-            <p class="zh">原站「球會戰績」以年份列出賽事成績。可讀到嘅項目包括小型足球總會邀請賽、反斗盃七人足球賽、聲威四角足球邀請賽、青少年足球賽等，名次包括冠軍、亞軍、高級組亞軍等。</p>
-            <p class="en">The “records” section listed results by year. Readable entries include invitational small-sided football, the Fandou seven-a-side cup, Sing Wai four-team invitation matches and youth football competitions, with positions such as champion, runner-up and senior-group runner-up.</p>
-          </div>
-          <img src="assets/hero-pitch.svg" alt="Red-tone retro football pitch illustration">
-        </div>
-      </div>
-    </section>
-
-    <section id="members" class="section members-section">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-kicker">Members / 會員簡介</p>
-          <h2>聲威足球會已確定會員簡介</h2>
-          <p class="zh intro">以下已根據你提供嘅原文補齊會員資料，並將舊式「0既」整理成較自然嘅「嘅」。英文翻譯以保留原評語意思為主。</p>
-          <p class="en intro">The confirmed member profiles have been restored from the supplied original text. The Chinese wording has been lightly cleaned up, and each profile includes an English translation that preserves the meaning of the original comments. Email addresses have been removed for privacy.</p>
-          <p class="privacy-note">私隱處理：所有會員電郵地址已移除；會員姓名已作遮蔽處理。</p>
-        </div>
-        <div class="member-grid">
-
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#7</div>
-              <div>
-                <h3>陳X強</h3>
-                <p class="player-nickname">花名：牙簽仔</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">人如其花名，體型瘦削，不過擁有極強嘅腳法同鬥心，把握力亦強，係聲威嘅中前場扮演一個極為重要嘅角色，唯體力略為不足以頂全場。</p>
-            <p class="en player-comment">As the nickname suggests, he is slim, but has excellent technique, strong fighting spirit and good finishing. He plays a very important role in Sing Wai’s midfield and attack, although his stamina may not quite last a full match.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#9</div>
-              <div>
-                <h3>陳X賢</h3>
-                <p class="player-nickname">花名：阿水</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">速度極快，腳法一絕，時有一般人做唔到嘅過關技術，令到對方無從捉摸，入球率亦不俗。</p>
-            <p class="en player-comment">Extremely quick, technically excellent, and capable of dribbling skills that most players cannot do. Opponents find him hard to read, and his scoring rate is also strong.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#19</div>
-              <div>
-                <h3>鄭X明</h3>
-                <p class="player-nickname">花名：傻仔明</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">體力充沛，速度快兼且鬥心強，腳法亦不俗，擁有一個助攻助守嘅翼衛必需條件，偶有令人驚喜嘅表現。</p>
-            <p class="en player-comment">Full of stamina, quick, determined and technically capable. He has the qualities needed for a wing-back who can support both attack and defence, and sometimes produces surprising moments.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#15</div>
-              <div>
-                <h3>鄭X華</h3>
-                <p class="player-nickname">花名：阿ＰＡＴ</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">破壞力強，射門觸角不俗，踢緊波時唔係點出聲嘅佢表現穩定，同其大佬X榮一齊落場表現更佳。</p>
-            <p class="en player-comment">A strong disruptor with a good eye for goal. Quiet on the pitch but steady in performance, and plays even better when partnered with his older brother the older brother.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#10</div>
-              <div>
-                <h3>鄭X榮</h3>
-                <p class="player-nickname">花名：蝦仔榮</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">擁有隻無敵左腳兼且有無限體力，左邊直情可以打晒，腳法純熟，射門觸角亦強，所以有極穩定嘅入球率。</p>
-            <p class="en player-comment">Blessed with a powerful left foot and endless stamina, he can cover the whole left side. His technique and finishing instinct give him a very consistent scoring record.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#3</div>
-              <div>
-                <h3>姜X文</h3>
-                <p class="player-nickname">花名：阿姜／芥蘭姜</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">左後衛，時有出色嘅飛身攔截，令到對手有不敢輕率之心，唯體型略肥嘅佢體力已大不如前。</p>
-            <p class="en player-comment">A left-back who sometimes makes excellent diving tackles, making opponents think twice. However, with a heavier build, his stamina is no longer what it once was.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#4</div>
-              <div>
-                <h3>郭X升</h3>
-                <p class="player-nickname">花名：肥升</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">腳法秀麗，每每輕易避過對手，頭腦冷靜，能夠穩定軍心，俾波落點準確，聲威嘅主力之一，受重創後經已復出。</p>
-            <p class="en player-comment">Elegant on the ball, calm under pressure, and able to steady the team. His passing is accurate, making him one of Sing Wai’s key players. He has returned after a serious injury.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#23</div>
-              <div>
-                <h3>黎X倫</h3>
-                <p class="player-nickname">花名：阿『籠』(籠字用上聲發音)</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">前鋒，聲威嘅超級大後備，質素一般且力短，勝在好鬥心及懂把握一般機會，而用開右腳嘅佢竟然有個黃金左腳嘅美譽，由此可見其利害程度。</p>
-            <p class="en player-comment">A forward and Sing Wai’s super-sub. His overall quality and stamina are modest, but he has strong determination and can take chances. Though naturally right-footed, he is even nicknamed for having a golden left foot.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#25</div>
-              <div>
-                <h3>羅X成</h3>
-                <p class="player-nickname">花名：<span class="empty-field">—</span></p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">聲威首席龍門，一般射門絕對過唔到佢五指關，表現穩定，令到各球員有無後顧之憂。</p>
-            <p class="en player-comment">Sing Wai’s first-choice goalkeeper. Ordinary shots rarely get past him, and his stable performances give the outfield players confidence.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#8</div>
-              <div>
-                <h3>廖X恒</h3>
-                <p class="player-nickname">花名：人狼</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">聲威主力球員，控球力強，有腳法及射門觸角，聲威球場上嘅發電機，所有攻勢都經佢發動，自己亦能殺入敵陣入波。</p>
-            <p class="en player-comment">A core player with strong ball control, technique and finishing instinct. He is Sing Wai’s engine on the pitch, starting attacks and also breaking into the opposition area to score.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#12</div>
-              <div>
-                <h3>馬X聲</h3>
-                <p class="player-nickname">花名：聖人</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">聲威二號龍門兼後衛，有鋼鐵後衛嘅稱號，攔截狠勇，直情係攞命搏，前鋒亦忌佢三分，亦因如此經常受傷就在所難免。</p>
-            <p class="en player-comment">Sing Wai’s second goalkeeper and a defender known as the iron defender. He tackles bravely and fearlessly, making forwards wary of him, though this style also leads to frequent injuries.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#11</div>
-              <div>
-                <h3>吳X淩</h3>
-                <p class="player-nickname">花名：<span class="empty-field">—</span></p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">聲威皇牌球員，擁有極強嘅射球威力，亦有自己過關斬將嘅能力，把握力極強，係聲威嘅神射手。</p>
-            <p class="en player-comment">Sing Wai’s star player. He has powerful shooting, the ability to beat opponents on his own, excellent finishing, and is the club’s sharpshooter.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#18</div>
-              <div>
-                <h3>彭X年</h3>
-                <p class="player-nickname">花名：馬騮</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">各方面都有極強嘅實力，鬥心亦強，要硬淨有硬淨，要技術有技術，時有入球，聲威主力球員之一。</p>
-            <p class="en player-comment">Strong in every area, with great fighting spirit. He combines toughness and technique, scores from time to time, and is one of Sing Wai’s main players.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#6</div>
-              <div>
-                <h3>孫X輝</h3>
-                <p class="player-nickname">花名：肥孫</p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">後衛，大後備之一，身材巨大嘅佢應付高空波簡直食菜咁食，唯轉身略慢兼且缺乏鬥心。</p>
-            <p class="en player-comment">A defender and one of the main reserves. His size makes him very strong in the air, although he turns slowly and lacks some fighting spirit.</p>
-          </article>
-          <article class="player-card">
-            <div class="player-top">
-              <div class="player-number">#5</div>
-              <div>
-                <h3>黃X藍</h3>
-                <p class="player-nickname">花名：<span class="empty-field">—</span></p>
-              </div>
-            </div>
-            <dl class="player-meta">
-              <div><dt>電郵地址</dt><dd><span class="empty-field">已移除</span></dd></div>
-              <div><dt>位置</dt><dd><span class="empty-field">—</span></dd></div>
-            </dl>
-            <p class="zh player-comment">包抄準確、鬥志頑強嘅後衛，普通前鋒絕對難越雷池。擁有無限體力嘅佢頂足全場絕無問題，上前助攻亦偶有佳作。</p>
-            <p class="en player-comment">A defender with accurate covering and strong determination. Ordinary forwards find him very hard to beat. With seemingly endless stamina, he can last a full match and occasionally contributes in attack.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="challenges" class="section muted">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-kicker">Prediction games / 挑戰賽</p>
-          <h2>估波挑戰賽同射馬挑戰賽：九十年代互動味道</h2>
-        </div>
-        <div class="content-grid two">
-          <article class="content-card red-deep">
-            <img src="assets/guessing-game.svg" alt="Prediction challenge computer illustration">
-            <h3>估波挑戰賽總排名</h3>
-            <p class="zh">原頁有「聲威估波挑戰賽總排名」：估波人參與所有估波賽事所得分數累積，以總分排名；冠、亞、季軍有獎勵，而包尾三個會有「特別對待」。</p>
-            <p class="en">The ranking page accumulated points from all prediction events. Total points determined the ranking; the top three received rewards, while the bottom three faced “special treatment”.</p>
-          </article>
-          <article class="content-card">
-            <h3>超級聯賽降班隊玩法</h3>
-            <ul class="rule-list">
-              <li><span>賽例</span><p>估出超級聯賽降班隊；如該球隊排尾三名就有分加。</p></li>
-              <li><span>計分</span><p>包尾 8 分、尾二 4 分、尾三 2 分。</p></li>
-              <li><span>截止</span><p>九月二十日；遲交作棄權論。</p></li>
-            </ul>
-            <p class="en">Rules: predict Premier League relegation teams. Bottom club scores 8 points, second-bottom 4 points, third-bottom 2 points. Deadline: 20 September; late entries count as forfeits.</p>
-          </article>
-        </div>
-        <div class="content-grid three small-cards">
-          <article><h4>估波挑戰賽</h4><p>Football prediction game and ranking table.</p></article>
-          <article><h4>射馬挑戰賽</h4><p>Original navigation includes a horse-racing challenge section; full text not recovered from snippets.</p></article>
-          <article><h4>排名榜精神</h4><p>Keep the retro competition feeling, but present it with responsive tables.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="links" class="section links-section">
-      <div class="container">
-        <p class="section-kicker">Recommended pages / 網頁推介</p>
-        <h2>原站「網頁推介」：九十年代足球＋互聯網生活清單</h2>
-        <p class="zh intro">原頁推介咗一堆當年常見嘅足球、遊戲、新聞、ICQ、廣告網絡同娛樂網站。新版將可讀到嘅名稱整理如下。</p>
-        <p class="en intro">The old links page mixed football sites, games, news, ICQ-era internet culture and entertainment links. The recoverable names are organised below.</p>
-        <div class="link-list">
-          <article><strong>FA-PREMIER</strong><span>英格蘭頂級足球聯賽資料 / English top-flight football information</span></article>
-          <article><strong>Soccernet</strong><span>足球新聞、賽事資訊 / Football news and match information</span></article>
-          <article><strong>NINTENDO64</strong><span>遊戲資訊 / Console and game information</span></article>
-          <article><strong>Ghost</strong><span>遊戲、漫畫或娛樂相關連結 / Entertainment link</span></article>
-          <article><strong>Netfun</strong><span>Cyber City / 早期網上社群元素</span></article>
-          <article><strong>ICQ</strong><span>九十年代即時通訊工具 / 1990s instant messaging</span></article>
-          <article><strong>Official World Cup 98</strong><span>1998 世界盃資料 / 1998 World Cup information</span></article>
-          <article><strong>ISFA Home</strong><span>Internet Soccer Fans Association</span></article>
-          <article><strong>95.8 Capital FM</strong><span>網上電台 / Online radio</span></article>
-          <article><strong>MSN News</strong><span>新聞、Wallpaper、download / News and downloads</span></article>
-          <article><strong>Sporting Life</strong><span>體育與足球新聞 / Sports news</span></article>
-          <article><strong>Netsoccer</strong><span>網上足球 Manager / Online football manager</span></article>
-          <article><strong>意大利足球</strong><span>意甲新聞、賽果、資料 / Italian football news and results</span></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="guestbook" class="section muted guestbook-section">
-      <div class="container split">
-        <div>
-          <p class="section-kicker">Guestbook / 聲威簽名簿</p>
-          <h2>「您實在太好人啦！！」</h2>
-          <p class="zh">原頁簽名簿以 “Please sign The Guestbook” 開頭，然後有姓名、電郵、網頁地址、網頁主題、點樣嚟到、來自邊度同意見等欄位。新版保留成一個懷舊展示表單。</p>
-          <p class="en">The guestbook began with “Please sign The Guestbook” and asked for name, email, homepage address, homepage topic, how the visitor arrived, where they came from, and comments.</p>
-        </div>
-        <div class="guestbook-card">
-          <img src="assets/guestbook.svg" alt="Red-tone guestbook illustration">
-          <form aria-label="Decorative guestbook form">
-            <label>姓名 / Name <input type="text" placeholder="Your name" disabled></label>
-            <label>電郵 / Email <input type="email" placeholder="已移除" disabled></label>
-            <label>意見 / Message <textarea placeholder="Good game!" disabled></textarea></label>
-            <button type="button" disabled>Sign Guestbook</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="sources" class="section archive">
-      <div class="container">
-        <p class="section-kicker">Archive map / 原站內容地圖</p>
-        <h2>已整理入新版嘅原站頁面</h2>
-        <p class="archive-note zh">以下係目前搜尋索引可確認嘅頁面。因原站直開經常 timeout，呢個版本已把可讀內容收錄入上面各 section，並保留原連結方便日後補全文。</p>
-        <p class="archive-note en">These are the pages confirmed from the indexed archive. The original pages often time out, so this remake includes the recoverable content and keeps direct source links for later restoration.</p>
-        <div class="link-grid">
-          <a href="https://www.oocities.org/colosseum/8433/" rel="noopener"><strong>主頁 / Home</strong><span>ENTER page, logo, browser note</span></a>
-          <a href="https://www.oocities.org/Colosseum/8433/singwai.html" rel="noopener"><strong>聲威足球會 / Club</strong><span>Club profile, updates, records</span></a>
-          <a href="https://www.oocities.org/Colosseum/8433/member.html" rel="noopener"><strong>會員簡介 / Members</strong><span>Player profile fields and comments</span></a>
-          <a href="https://www.oocities.org/Colosseum/8433/Soccer/9899/ranking9899.html" rel="noopener"><strong>估波排名 / Prediction ranking</strong><span>98/99 total ranking concept</span></a>
-          <a href="https://www.oocities.org/Colosseum/8433/Soccer/9899/relegation9899.html" rel="noopener"><strong>降班隊玩法 / Relegation game</strong><span>Rules, points and deadline</span></a>
-          <a href="https://www.oocities.org/Colosseum/8433/besthtm.html" rel="noopener"><strong>網頁推介 / Links</strong><span>Football, ICQ, news, games</span></a>
-          <a href="https://www.oocities.org/Colosseum/8433/book.html" rel="noopener"><strong>聲威簽名簿 / Guestbook</strong><span>Guestbook form fields</span></a>
-        </div>
-      </div>
-    </section>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <strong>聲威足球會 · Sing Wai Football Club</strong>
-        <p>Red remastered static website. New SVG illustrations created for this redesign.</p>
+        <p>V2 curated remaster: old content reorganised into a modern multi-page memorial website.</p>
       </div>
       <div>
-        <p>Source note: based on the OoCities archive search results for the original GeoCities-era site. This remake preserves and translates the recoverable content, and clearly marks areas where the old archive text is incomplete or garbled.</p>
+        <p>Privacy handling: email addresses removed and full Chinese member names masked. Original archive pages are preserved in the Full Archive section.</p>
       </div>
     </div>
   </footer>
+
+  <div class="music-player" aria-label="Background music player">
+    <audio data-bg-music preload="none">
+      <source src="assets/audio/singwai.mp3" type="audio/mpeg">
+      <source src="assets/audio/singwai.ogg" type="audio/ogg">
+      <source src="assets/original/singwai.mid" type="audio/midi">
+    </audio>
+    <button class="music-toggle" type="button" data-music-toggle aria-pressed="false">播放背景音樂 Play music</button>
+    <span class="music-status" data-music-status>已轉成 MP3/OGG；按下播放</span>
+  </div>
+  <script src="assets/music.js"></script>
+
 </body>
 </html>

@@ -65,3 +65,50 @@ This version restores the confirmed member profiles supplied by the user, includ
 ## Privacy update
 
 Member email addresses have been removed, and member names have been masked for privacy, for example names are displayed in masked format such as `陳X強`.
+
+
+## Complete old page conversion
+
+This version integrates the user-supplied old-site ZIP into the new remastered website.
+
+- Converted old content pages: 18
+- Added `archive.html` as the full archive index
+- Added individual converted pages under `pages/`
+- Preserved the previous red tone and supplied SW logo
+- Removed all email addresses from public pages
+- Masked full Chinese member names for privacy
+- Converted old Big5/CP950 text into UTF-8
+- Included the original `singwai.mid` file under `assets/original/` without autoplay
+
+
+## Background MIDI music
+
+This version adds a floating Play/Pause music control that uses the original `assets/original/singwai.mid` file. It does not autoplay; modern browsers usually require a user click before sound can start. Some browsers may not play MIDI files directly, so converting the MIDI to MP3/OGG is recommended for maximum compatibility.
+
+
+## Converted background music
+
+The original MIDI has been converted into browser-friendly audio using a simple Python MIDI synthesizer.
+
+- Notes parsed: 281
+- Estimated duration: 39.8 seconds
+- Encoded formats: mp3, ogg
+- Original MIDI retained: `assets/original/singwai.mid`
+
+The floating music button uses MP3/OGG first when available, with the original MIDI as a fallback. The audio is not autoplayed; visitors need to click the play button.
+
+
+## V2 curated multi-page remaster
+
+This version reorganises the old website into a modern flow:
+
+- `index.html` — homepage and site journey
+- `club.html` — club story and timeline
+- `members.html` — full member card roster with privacy masking
+- `records.html` — trophy/records board
+- `prediction.html` — football prediction challenge hub
+- `horse.html` — horse racing challenge hub
+- `retro.html` — MIDI, guestbook, Netscape/GeoCities nostalgia
+- `archive.html` and `pages/` — full converted old-page backup
+
+Privacy checks were run before packaging: emails removed; original full Chinese names masked.
