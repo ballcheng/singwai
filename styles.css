@@ -3102,3 +3102,394 @@ html {
     height: 116px !important;
   }
 }
+
+/* ===== mobile-pitch-fixed-final-override ===== */
+/* Force the squad formation to look like a LiveScore-style pitch on phones / narrow tablets. */
+@media (max-width: 900px) {
+  .v3 .formation-section,
+  body.v3 .formation-section {
+    padding-top: 28px !important;
+  }
+
+  .v3 .formation-all-layout,
+  .v3 .formation-layout,
+  body.v3 .formation-all-layout,
+  body.v3 .formation-layout {
+    display: block !important;
+  }
+
+  .v3 .formation-pitch-card,
+  .v3 .formation-pitch-card-full,
+  body.v3 .formation-pitch-card,
+  body.v3 .formation-pitch-card-full {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .v3 .formation-pitch,
+  .v3 .formation-pitch-full,
+  body.v3 .formation-pitch,
+  body.v3 .formation-pitch-full {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 720px !important;
+    height: min(1040px, 128vw) !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-radius: 28px !important;
+    border: 1px solid rgba(255,255,255,.22) !important;
+    box-shadow: 0 18px 44px rgba(23,54,28,.28) !important;
+    background:
+      radial-gradient(circle at 82% 19%, rgba(255,255,255,.08), transparent 22%),
+      radial-gradient(circle at 13% 73%, rgba(255,255,255,.07), transparent 24%),
+      linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(255,255,255,.04) 1px, transparent 1px),
+      linear-gradient(135deg, #0d2a18, #17432a 54%, #0f2c1b) !important;
+    background-size: auto, auto, 64px 64px, 64px 64px, cover !important;
+  }
+
+  .v3 .formation-mobile-badge,
+  body.v3 .formation-mobile-badge {
+    display: block !important;
+    position: absolute !important;
+    right: 18px !important;
+    top: 20px !important;
+    z-index: 0 !important;
+    color: rgba(255,255,255,.10) !important;
+    font-family: "Space Grotesk", sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 2.7rem !important;
+    pointer-events: none !important;
+  }
+
+  .v3 .formation-pitch::before,
+  body.v3 .formation-pitch::before {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    inset: 16px !important;
+    border: 1.5px solid rgba(255,255,255,.20) !important;
+    border-radius: 22px !important;
+    background: transparent !important;
+    z-index: 0 !important;
+  }
+
+  .v3 .formation-pitch::after,
+  body.v3 .formation-pitch::after {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    left: 16px !important;
+    right: 16px !important;
+    top: 50% !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: 1.5px !important;
+    transform: none !important;
+    background: rgba(255,255,255,.18) !important;
+    z-index: 0 !important;
+  }
+
+  .v3 .formation-center-circle,
+  body.v3 .formation-center-circle {
+    display: block !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    width: 132px !important;
+    height: 132px !important;
+    transform: translate(-50%, -50%) !important;
+    border: 1.5px solid rgba(255,255,255,.18) !important;
+    border-radius: 50% !important;
+    z-index: 0 !important;
+  }
+
+  .v3 .formation-box,
+  body.v3 .formation-box {
+    display: block !important;
+    position: absolute !important;
+    left: 50% !important;
+    width: 46% !important;
+    height: 82px !important;
+    transform: translateX(-50%) !important;
+    border: 1.5px solid rgba(255,255,255,.17) !important;
+    z-index: 0 !important;
+  }
+
+  .v3 .formation-box-top,
+  body.v3 .formation-box-top {
+    top: 16px !important;
+    border-top: 0 !important;
+    border-radius: 0 0 16px 16px !important;
+  }
+
+  .v3 .formation-box-bottom,
+  body.v3 .formation-box-bottom {
+    bottom: 16px !important;
+    border-bottom: 0 !important;
+    border-radius: 16px 16px 0 0 !important;
+  }
+
+  .v3 .formation-row,
+  .v3 .formation-row-four,
+  .v3 .formation-row-five,
+  .v3 .formation-row-fw-all,
+  .v3 .formation-row-mf-all,
+  .v3 .formation-row-df-all,
+  .v3 .formation-row-gk-all,
+  body.v3 .formation-row,
+  body.v3 .formation-row-four,
+  body.v3 .formation-row-five,
+  body.v3 .formation-row-fw-all,
+  body.v3 .formation-row-mf-all,
+  body.v3 .formation-row-df-all,
+  body.v3 .formation-row-gk-all {
+    display: block !important;
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    background: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .v3 .formation-player,
+  .v3 .formation-row-five .formation-player,
+  .v3 .formation-row-four .formation-player,
+  body.v3 .formation-player,
+  body.v3 .formation-row-five .formation-player,
+  body.v3 .formation-row-four .formation-player {
+    position: absolute !important;
+    left: var(--x) !important;
+    top: var(--y) !important;
+    z-index: 2 !important;
+    width: 68px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    transform: translate(-50%, -50%) !important;
+    cursor: pointer !important;
+    filter: none !important;
+  }
+
+  .v3 .formation-player:hover,
+  .v3 .formation-player:focus-visible,
+  body.v3 .formation-player:hover,
+  body.v3 .formation-player:focus-visible {
+    transform: translate(-50%, -54%) !important;
+    outline: none !important;
+  }
+
+  .v3 .formation-player::before,
+  .v3 .formation-player::after,
+  body.v3 .formation-player::before,
+  body.v3 .formation-player::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .v3 .formation-no,
+  body.v3 .formation-no {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    min-width: 42px !important;
+    height: 42px !important;
+    margin: 0 auto 5px !important;
+    padding: 0 !important;
+    border-radius: 999px !important;
+    background: rgba(255,255,255,.96) !important;
+    color: #171717 !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,.28) !important;
+    font-family: "Space Grotesk", sans-serif !important;
+    font-size: .98rem !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+    text-shadow: none !important;
+  }
+
+  .v3 .formation-player.star .formation-no,
+  body.v3 .formation-player.star .formation-no {
+    background: #fef3c7 !important;
+    color: #3f2100 !important;
+    box-shadow: 0 0 0 3px rgba(251,191,36,.28), 0 8px 20px rgba(0,0,0,.28) !important;
+  }
+
+  .v3 .formation-player.core .formation-no,
+  body.v3 .formation-player.core .formation-no {
+    box-shadow: 0 0 0 3px rgba(34,197,94,.22), 0 8px 20px rgba(0,0,0,.28) !important;
+  }
+
+  .v3 .formation-player strong,
+  body.v3 .formation-player strong {
+    display: block !important;
+    color: #fff !important;
+    font-size: .78rem !important;
+    font-weight: 900 !important;
+    line-height: 1.12 !important;
+    white-space: nowrap !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,.78) !important;
+  }
+
+  .v3 .formation-player small,
+  body.v3 .formation-player small {
+    display: none !important;
+  }
+
+  /* Keep the music button consistently on the right bottom on mobile. */
+  .v3 .music-player,
+  body.v3 .music-player,
+  .music-player {
+    position: fixed !important;
+    right: max(14px, env(safe-area-inset-right)) !important;
+    left: auto !important;
+    bottom: max(16px, env(safe-area-inset-bottom)) !important;
+    width: auto !important;
+    z-index: 9999 !important;
+    transform: none !important;
+  }
+
+  .v3 .music-toggle,
+  body.v3 .music-toggle,
+  .music-toggle {
+    width: 62px !important;
+    height: 62px !important;
+    min-width: 62px !important;
+    padding: 0 !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-indent: -9999px !important;
+    box-shadow: 0 12px 28px rgba(63,7,17,.22) !important;
+  }
+
+  .v3 .music-toggle::before,
+  body.v3 .music-toggle::before,
+  .music-toggle::before {
+    content: "♪" !important;
+    display: grid !important;
+    place-items: center !important;
+    position: absolute !important;
+    inset: 0 !important;
+    text-indent: 0 !important;
+    font-size: 2rem !important;
+  }
+
+  .v3 .music-status,
+  body.v3 .music-status,
+  .music-status {
+    display: none !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .v3 .formation-pitch,
+  .v3 .formation-pitch-full,
+  body.v3 .formation-pitch,
+  body.v3 .formation-pitch-full {
+    min-height: 690px !important;
+    height: 124vw !important;
+    border-radius: 24px !important;
+  }
+
+  .v3 .formation-player,
+  body.v3 .formation-player {
+    width: 60px !important;
+  }
+
+  .v3 .formation-no,
+  body.v3 .formation-no {
+    width: 37px !important;
+    min-width: 37px !important;
+    height: 37px !important;
+    font-size: .88rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  .v3 .formation-player strong,
+  body.v3 .formation-player strong {
+    font-size: .70rem !important;
+  }
+
+  .v3 .formation-center-circle,
+  body.v3 .formation-center-circle {
+    width: 112px !important;
+    height: 112px !important;
+  }
+}
+
+/* ===== music-button-right-final-v2 ===== */
+@media (max-width: 1200px) {
+  body .music-player,
+  body.v2 .music-player,
+  body.v3 .music-player,
+  .music-player {
+    position: fixed !important;
+    inset: auto max(14px, env(safe-area-inset-right)) max(18px, env(safe-area-inset-bottom)) auto !important;
+    left: auto !important;
+    right: max(14px, env(safe-area-inset-right)) !important;
+    bottom: max(18px, env(safe-area-inset-bottom)) !important;
+    top: auto !important;
+    width: 62px !important;
+    height: 62px !important;
+    display: block !important;
+    z-index: 2147483647 !important;
+    transform: translate3d(0,0,0) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    pointer-events: auto !important;
+  }
+
+  body .music-toggle,
+  body.v2 .music-toggle,
+  body.v3 .music-toggle,
+  .music-toggle {
+    position: relative !important;
+    display: block !important;
+    width: 62px !important;
+    height: 62px !important;
+    min-width: 62px !important;
+    max-width: 62px !important;
+    min-height: 62px !important;
+    max-height: 62px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-indent: -9999px !important;
+  }
+
+  body .music-toggle::before,
+  body.v2 .music-toggle::before,
+  body.v3 .music-toggle::before,
+  .music-toggle::before {
+    content: "♪" !important;
+    display: grid !important;
+    place-items: center !important;
+    position: absolute !important;
+    inset: 0 !important;
+    text-indent: 0 !important;
+    font-size: 2rem !important;
+    line-height: 1 !important;
+  }
+
+  body .music-status,
+  body.v2 .music-status,
+  body.v3 .music-status,
+  .music-status {
+    display: none !important;
+  }
+}
