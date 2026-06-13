@@ -3493,3 +3493,137 @@ html {
     display: none !important;
   }
 }
+
+/* ===== mobile-table-compact-final ===== */
+/* Make historical/result tables more readable on phones and reduce horizontal scrolling. */
+@media (max-width: 760px) {
+  table,
+  .legacy-table,
+  .table-wrap table,
+  .data-table,
+  .archive-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    table-layout: auto !important;
+    border-collapse: collapse !important;
+  }
+
+  .table-wrap,
+  .responsive-table,
+  .legacy-table-wrap,
+  .archive-table-wrap,
+  .table-scroll {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th,
+  td,
+  table th,
+  table td,
+  .legacy-table th,
+  .legacy-table td,
+  .data-table th,
+  .data-table td,
+  .archive-table th,
+  .archive-table td {
+    padding: 7px 6px !important;
+    font-size: clamp(.70rem, 2.8vw, .86rem) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    vertical-align: top !important;
+  }
+
+  th,
+  table th,
+  .legacy-table th,
+  .data-table th,
+  .archive-table th {
+    font-size: clamp(.68rem, 2.7vw, .82rem) !important;
+    letter-spacing: 0 !important;
+  }
+
+  caption {
+    font-size: .9rem !important;
+    line-height: 1.35 !important;
+    padding: 8px 10px !important;
+  }
+
+  /* Common old-site columns: numbers / matchday / score / rank should stay narrow. */
+  th:first-child,
+  td:first-child {
+    width: 1%;
+    white-space: nowrap !important;
+  }
+
+  /* Date columns can wrap Chinese dates more gracefully. */
+  th:nth-child(2),
+  td:nth-child(2) {
+    max-width: 9.5em;
+  }
+
+  /* Long names / teams / horse names can wrap instead of forcing scroll. */
+  td:nth-child(n+3),
+  th:nth-child(n+3) {
+    max-width: 13em;
+  }
+
+  /* Reduce visual bulk of table heading cards before tables. */
+  .table-heading-block,
+  .restored-commentary,
+  .legacy-toolbar {
+    padding: 12px !important;
+    border-radius: 18px !important;
+  }
+
+  .table-heading-block h2,
+  .table-heading-block h3,
+  .restored-commentary h2,
+  .restored-commentary h3 {
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .table-heading-block p,
+  .restored-commentary p,
+  .legacy-toolbar,
+  .legacy-toolbar span {
+    font-size: .82rem !important;
+    line-height: 1.45 !important;
+  }
+}
+
+/* Extra-tight mode for very narrow iPhones. */
+@media (max-width: 430px) {
+  th,
+  td,
+  table th,
+  table td,
+  .legacy-table th,
+  .legacy-table td,
+  .data-table th,
+  .data-table td,
+  .archive-table th,
+  .archive-table td {
+    padding: 6px 4px !important;
+    font-size: clamp(.66rem, 2.65vw, .78rem) !important;
+  }
+
+  caption {
+    font-size: .82rem !important;
+    padding: 7px 8px !important;
+  }
+
+  /* Very long historical text should wrap even inside old converted cells. */
+  table a,
+  table span,
+  table strong {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+}
