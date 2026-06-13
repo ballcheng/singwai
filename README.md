@@ -166,3 +166,33 @@ Prediction, horse-racing and retro content cards now use Chinese/English side-by
 ## Old link-card cleanup
 
 Old hyperlink/menu-description cards from the original framed site have been removed from the main prediction and horse-racing pages. Actual records, rankings, tables and article content remain.
+
+
+## Club news grouped by competition
+
+`club-news.html` has been rebuilt to match the old club-news logic: General Cup, Summer Cup, and District Board Cup are separate sections. Each section includes its original summary, corresponding detailed match reports, and Sing Wai line-ups.
+
+
+## Records glory enhancement
+
+`club-records.html` has been refreshed with fuller honours content and a more celebratory layout, including trophy / medal / star icons and honour summary counters.
+
+
+## Subtle bilingual presentation
+
+The site keeps bilingual support, but visible labels such as "中文", "English", and "English note" have been removed so the page reads more naturally.
+
+
+## 98/99 prediction main restored
+
+The 1998/99 prediction main page has been rebuilt from the original content: champion, runner-up, third place, review paragraphs and bottom-three results. Old navigation/link text has been removed from the main prediction page.
+
+
+## Full prediction cleanup
+
+All football prediction sections, including 97/98 and 98/99, have been reviewed for old framed-site hyperlink/menu text. Navigation-only cards were removed while actual ranking, score and result tables were preserved.
+
+
+## Horse glory headings
+
+The three horse-racing glory-history tables now have explicit headings: highest win-bet payout, highest quinella payout, and highest tierce payout. Captions and visual heading blocks were added to both the main horse page and the database page.
