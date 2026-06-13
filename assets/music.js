@@ -12,7 +12,7 @@
   function setPlayingUI(isPlaying, message) {
     button.classList.toggle("is-playing", isPlaying);
     button.setAttribute("aria-pressed", isPlaying ? "true" : "false");
-    button.textContent = isPlaying ? "暫停背景音樂 Pause music" : "播放背景音樂 Play music";
+    button.textContent = isPlaying ? "暫停音樂 Pause" : "播放音樂 Play";
     if (status) {
       status.textContent = message || (isPlaying ? "背景音樂播放中" : "背景音樂已暫停");
     }

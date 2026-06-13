@@ -137,3 +137,32 @@ Only full Chinese names are masked in the public version. Nicknames, partial nam
 ## Clean link-only text
 
 Old standalone hyperlink/menu labels from the original framed site were removed from the displayed content. This keeps real records, tables, match reports and member notes, while dropping old navigation/link-only text.
+
+
+## Club intro split
+
+The original club introduction page structure is now reflected as three separate public pages:
+
+- `club-intro.html` — club introduction
+- `club-news.html` — old/current-status section, marked as about 30 years ago, including competition details
+- `club-records.html` — honours and records
+
+
+## Bilingual parallel translation
+
+This version adds Chinese/English parallel presentation to the main content pages. Club intro, old club news, records, members, prediction and horse-racing challenge pages now include English translation or English guide text alongside the Chinese records.
+
+
+## Mobile compact layout
+
+The mobile header has been compressed into a sticky logo row plus a single horizontal scrolling menu. English menu subtitles are hidden on small screens. The music player is also reduced to a floating round button at the bottom-right on mobile, with status text hidden to avoid taking up footer space.
+
+
+## True bilingual content cards
+
+Prediction, horse-racing and retro content cards now use Chinese/English side-by-side panels, rather than only showing an English guide at the top of each section. Tables keep their original data and include English notes.
+
+
+## Old link-card cleanup
+
+Old hyperlink/menu-description cards from the original framed site have been removed from the main prediction and horse-racing pages. Actual records, rankings, tables and article content remain.

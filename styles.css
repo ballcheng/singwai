@@ -1071,3 +1071,381 @@ time { display: inline-flex; background: var(--red-100); color: var(--red-900); 
     padding: 14px;
   }
 }
+
+
+/* ===== split-club-pages ===== */
+.club-split-grid .journey-card {
+  min-height: 260px;
+}
+.intro-text-grid {
+  grid-template-columns: 1fr;
+}
+.intro-card {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+.status-summary-grid .status-card {
+  border-left: 8px solid var(--gold);
+}
+.match-report summary {
+  background: linear-gradient(135deg, var(--red-950), var(--red-700));
+}
+.match-card p:first-child {
+  font-weight: 900;
+  color: var(--red-950);
+}
+.trophy-year-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.trophy-year-card {
+  background: var(--white);
+  border: 1px solid rgba(100, 17, 28, .12);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px;
+  border-top: 8px solid var(--gold);
+}
+.trophy-year-card h3 {
+  color: var(--red-950);
+  font-family: "Space Grotesk", "Noto Sans HK", sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 14px;
+}
+.trophy-year-card p {
+  margin-bottom: .7rem;
+  color: var(--ink);
+  font-weight: 800;
+}
+.next-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+@media (max-width: 980px) {
+  .trophy-year-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .trophy-year-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===== bilingual-translation-layer ===== */
+.bilingual-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: var(--white);
+  border: 1px solid rgba(100, 17, 28, .13);
+  border-radius: 24px;
+  box-shadow: 0 14px 34px rgba(63, 7, 17, .10);
+  overflow: hidden;
+}
+.bilingual-card .zh-panel,
+.bilingual-card .en-panel {
+  padding: 20px;
+}
+.bilingual-card .zh-panel {
+  background: var(--white);
+}
+.bilingual-card .en-panel {
+  background: rgba(255, 241, 242, .72);
+  border-left: 1px solid rgba(100, 17, 28, .12);
+}
+.bilingual-card p {
+  margin: 0;
+  line-height: 1.85;
+}
+.lang-label {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  background: var(--red-100);
+  color: var(--red-900);
+  font-family: "Space Grotesk", "Noto Sans HK", sans-serif;
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+.en-panel p,
+.en-card,
+.drawer-english-guide p,
+.record-english p {
+  font-family: "Space Grotesk", "Noto Sans HK", sans-serif;
+}
+.en-card {
+  color: var(--muted);
+  font-size: .95rem;
+  margin-top: .6rem;
+}
+.drawer-english-guide,
+.record-english {
+  background: rgba(255, 241, 242, .85);
+  border: 1px solid rgba(100, 17, 28, .12);
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+.drawer-english-guide p,
+.record-english p {
+  margin-bottom: .65rem;
+  color: var(--ink);
+}
+.drawer-english-guide p:last-child,
+.record-english p:last-child {
+  margin-bottom: 0;
+}
+.content-drawer summary small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255, 247, 237, .72);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: .82rem;
+}
+.trophy-year-card .record-english {
+  margin-top: 18px;
+}
+.v2-player-card .en::before {
+  content: "English";
+  display: inline-flex;
+  margin-bottom: 8px;
+  padding: .22rem .55rem;
+  border-radius: 999px;
+  background: var(--red-100);
+  color: var(--red-900);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: .72rem;
+  font-weight: 900;
+}
+@media (max-width: 760px) {
+  .bilingual-card {
+    grid-template-columns: 1fr;
+  }
+  .bilingual-card .en-panel {
+    border-left: 0;
+    border-top: 1px solid rgba(100, 17, 28, .12);
+  }
+}
+
+
+/* ===== mobile-compact-header-and-music ===== */
+@media (max-width: 760px) {
+  .site-header,
+  .v2-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 8px 0 6px;
+    backdrop-filter: blur(16px);
+  }
+
+  .nav-wrap {
+    display: grid;
+    gap: 8px;
+  }
+
+  .brand {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 10px;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 12px;
+  }
+
+  .brand strong {
+    font-size: 1.05rem;
+    line-height: 1.05;
+  }
+
+  .brand small {
+    font-size: .78rem;
+    line-height: 1.05;
+  }
+
+  .nav,
+  .v2-nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 7px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 2px 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar,
+  .v2-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a,
+  .v2-nav a {
+    flex: 0 0 auto;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 6px 10px !important;
+    border-radius: 999px !important;
+    white-space: nowrap;
+    font-size: .94rem;
+    line-height: 1;
+    box-shadow: none;
+  }
+
+  .nav a small,
+  .v2-nav a small {
+    display: none !important;
+  }
+
+  .nav a span,
+  .v2-nav a span {
+    line-height: 1;
+  }
+
+  .v2-nav a.active {
+    background: var(--red-950);
+    color: var(--cream);
+  }
+
+  .page-hero {
+    padding-top: 58px;
+    padding-bottom: 54px;
+  }
+
+  .v2-hero-grid {
+    padding-top: 58px;
+  }
+
+  .music-player {
+    position: fixed !important;
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    z-index: 80;
+    display: block;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .music-toggle {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    padding: 0 !important;
+    border-radius: 999px !important;
+    box-shadow: 0 14px 34px rgba(63, 7, 17, .34);
+    font-size: 0 !important;
+    overflow: hidden;
+  }
+
+  .music-toggle::before {
+    content: "♪";
+    font-size: 1.65rem;
+    line-height: 1;
+  }
+
+  .music-toggle.is-playing::before {
+    content: "Ⅱ";
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 900;
+  }
+
+  .music-status {
+    display: none !important;
+  }
+
+  .site-footer {
+    padding-bottom: 88px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand {
+    grid-template-columns: 38px 1fr;
+  }
+
+  .brand img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .brand strong {
+    font-size: .98rem;
+  }
+
+  .brand small {
+    font-size: .72rem;
+  }
+
+  .nav a,
+  .v2-nav a {
+    font-size: .88rem;
+    padding: 6px 9px !important;
+  }
+
+  .music-toggle {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+  }
+}
+
+
+/* ===== true-bilingual-content-cards ===== */
+.content-drawer .content-notes-grid {
+  grid-template-columns: 1fr;
+}
+.content-drawer .bilingual-card {
+  margin-bottom: 16px;
+}
+.content-drawer .bilingual-card .zh-panel p + p,
+.content-drawer .bilingual-card .en-panel p + p {
+  margin-top: .65rem;
+}
+.table-english-note {
+  margin: -8px 0 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 241, 242, .8);
+  border: 1px solid rgba(100, 17, 28, .12);
+  color: var(--muted);
+  font-family: "Space Grotesk", "Noto Sans HK", sans-serif;
+  font-size: .92rem;
+}
+@media (min-width: 1000px) {
+  .content-drawer .bilingual-card {
+    grid-template-columns: 1.05fr .95fr;
+  }
+}
+
+
+/* ===== no-link-card-cleanup ===== */
+.content-drawer .content-notes-grid:empty {
+  display: none;
+}
+.content-drawer .content-notes-grid {
+  grid-template-columns: 1fr;
+}
+.content-drawer .bilingual-card:last-child {
+  margin-bottom: 0;
+}
