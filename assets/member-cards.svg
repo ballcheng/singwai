@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Retro football member cards</title>
+  <desc id="desc">Illustration of retro player cards inspired by 1990s personal websites.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#fee2e2"/></linearGradient>
+  </defs>
+  <rect width="1000" height="600" rx="40" fill="#64111c"/>
+  <g transform="translate(85 80)">
+    <rect x="0" y="0" width="230" height="380" rx="26" fill="url(#card)" stroke="#fbbf24" stroke-width="8"/>
+    <circle cx="115" cy="110" r="58" fill="#b91c1c"/>
+    <circle cx="115" cy="85" r="28" fill="#ffd6a5"/>
+    <path d="M65 184c20-37 80-37 100 0v70H65z" fill="#64111c"/>
+    <text x="115" y="302" text-anchor="middle" font-family="Verdana" font-size="48" font-weight="800" fill="#64111c">#7</text>
+    <text x="115" y="342" text-anchor="middle" font-family="Verdana" font-size="24" fill="#b91c1c">Attack</text>
+  </g>
+  <g transform="translate(385 65) rotate(3)">
+    <rect x="0" y="0" width="230" height="410" rx="26" fill="url(#card)" stroke="#fbbf24" stroke-width="8"/>
+    <circle cx="115" cy="120" r="58" fill="#b91c1c"/>
+    <circle cx="115" cy="94" r="28" fill="#ffd6a5"/>
+    <path d="M65 198c20-37 80-37 100 0v74H65z" fill="#64111c"/>
+    <text x="115" y="322" text-anchor="middle" font-family="Verdana" font-size="48" font-weight="800" fill="#64111c">#10</text>
+    <text x="115" y="362" text-anchor="middle" font-family="Verdana" font-size="24" fill="#b91c1c">Midfield</text>
+  </g>
+  <g transform="translate(685 80)">
+    <rect x="0" y="0" width="230" height="380" rx="26" fill="url(#card)" stroke="#fbbf24" stroke-width="8"/>
+    <circle cx="115" cy="110" r="58" fill="#b91c1c"/>
+    <circle cx="115" cy="85" r="28" fill="#ffd6a5"/>
+    <path d="M65 184c20-37 80-37 100 0v70H65z" fill="#64111c"/>
+    <text x="115" y="302" text-anchor="middle" font-family="Verdana" font-size="48" font-weight="800" fill="#64111c">#1</text>
+    <text x="115" y="342" text-anchor="middle" font-family="Verdana" font-size="24" fill="#b91c1c">Keeper</text>
+  </g>
+  <g opacity=".75" fill="#fbbf24">
+    <circle cx="123" cy="512" r="7"/><circle cx="151" cy="512" r="7"/><circle cx="179" cy="512" r="7"/>
+    <circle cx="821" cy="512" r="7"/><circle cx="849" cy="512" r="7"/><circle cx="877" cy="512" r="7"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Football prediction challenge illustration</title>
+  <desc id="desc">Retro computer screen showing a football prediction ranking table.</desc>
+  <rect width="1000" height="600" rx="40" fill="#3f0711"/>
+  <rect x="105" y="65" width="790" height="430" rx="24" fill="#c8d4d7"/>
+  <rect x="140" y="100" width="720" height="330" fill="#64111c"/>
+  <rect x="140" y="100" width="720" height="54" fill="#b91c1c"/>
+  <text x="172" y="137" font-family="Verdana" font-size="26" font-weight="700" fill="#fff7ed">Prediction Challenge 98/99</text>
+  <g font-family="Verdana" font-size="22" fill="#fff7ed">
+    <text x="175" y="205">#</text><text x="235" y="205">Player</text><text x="540" y="205">Pts</text><text x="665" y="205">Form</text>
+    <line x1="170" y1="225" x2="820" y2="225" stroke="#fbbf24" stroke-width="3"/>
+    <text x="175" y="270">1</text><text x="235" y="270">Member A</text><text x="550" y="270">88</text><text x="665" y="270">W W D W</text>
+    <text x="175" y="320">2</text><text x="235" y="320">Member B</text><text x="550" y="320">82</text><text x="665" y="320">W L W W</text>
+    <text x="175" y="370">3</text><text x="235" y="370">Member C</text><text x="550" y="370">79</text><text x="665" y="370">D W W L</text>
+  </g>
+  <rect x="390" y="495" width="220" height="42" rx="12" fill="#c8d4d7"/>
+  <rect x="326" y="535" width="348" height="28" rx="10" fill="#96a0a3"/>
+  <circle cx="785" cy="128" r="14" fill="#ff6b6b"/>
+</svg>

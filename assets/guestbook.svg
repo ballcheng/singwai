@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Retro guestbook illustration</title>
+  <desc id="desc">An open guestbook with 1990s web icons and bilingual greetings.</desc>
+  <rect width="1000" height="600" rx="40" fill="#fff1f2"/>
+  <path d="M175 105h300c55 0 80 28 80 80v320H242c-39 0-67-28-67-67z" fill="#fff" stroke="#64111c" stroke-width="8"/>
+  <path d="M825 105H525c-55 0-80 28-80 80v320h313c39 0 67-28 67-67z" fill="#fff7ed" stroke="#64111c" stroke-width="8"/>
+  <line x1="500" y1="122" x2="500" y2="500" stroke="#f59e0b" stroke-width="5"/>
+  <g font-family="Verdana, Arial" fill="#64111c">
+    <text x="235" y="180" font-size="34" font-weight="800">Guestbook</text>
+    <text x="235" y="230" font-size="22">Leave your message</text>
+    <text x="235" y="280" font-size="22">Good game!</text>
+    <text x="235" y="330" font-size="22">See you Wednesday.</text>
+    <text x="560" y="180" font-size="32" font-weight="800">聲威簽名簿</text>
+    <text x="560" y="230" font-size="22">歡迎留言</text>
+    <text x="560" y="280" font-size="22">繼續踢落去！</text>
+    <text x="560" y="330" font-size="22">星期三見。</text>
+  </g>
+  <g fill="#b91c1c">
+    <circle cx="312" cy="410" r="26"/><circle cx="610" cy="410" r="26"/>
+    <path d="M360 395h70v30h-70zM660 395h70v30h-70z"/>
+  </g>
+</svg>
