@@ -112,3 +112,28 @@ This version reorganises the old website into a modern flow:
 - `archive.html` and `pages/` — full converted old-page backup
 
 Privacy checks were run before packaging: emails removed; original full Chinese names masked.
+
+
+## Restored legacy tables
+
+This version restores table structure from the old HTML pages into the remastered design. Ranking pages, football prediction results, horse-racing ledgers, tips and records are now displayed as styled responsive tables instead of flattened text.
+
+
+## V3 content-first presentation
+
+This version removes public-facing explanation about the redesign process and presents the club content directly. Football prediction tables, horse-racing ledgers, club reports, member cards and retro assets are surfaced in the main pages rather than only in the database pages.
+
+
+## Autoplay test version
+
+This version attempts audible autoplay by adding `autoplay loop playsinline preload="auto"` to the background audio element and calling `audio.play()` on page load. Modern browsers may still block audible autoplay, so the floating Play/Pause button remains as a fallback.
+
+
+## Nickname restoration
+
+Only full Chinese names are masked in the public version. Nicknames, partial names and football/racing aliases are preserved because they are part of the club records and not full personal names.
+
+
+## Clean link-only text
+
+Old standalone hyperlink/menu labels from the original framed site were removed from the displayed content. This keeps real records, tables, match reports and member notes, while dropping old navigation/link-only text.
