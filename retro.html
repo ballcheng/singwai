@@ -70,14 +70,13 @@
 <footer class="site-footer">
 </footer>
 <div aria-label="Background music player" class="music-player">
-<audio autoplay="" data-bg-music="" loop="" playsinline="" preload="auto">
+<audio class="bg-music" data-bg-music="" loop="" preload="auto">
 <source src="assets/audio/singwai.mp3" type="audio/mpeg"/>
 <source src="assets/audio/singwai.ogg" type="audio/ogg"/>
-<source src="assets/original/singwai.mid" type="audio/midi"/>
 </audio>
 <button aria-pressed="false" class="music-toggle" data-music-toggle="" type="button">播放音樂 Play</button>
 <span class="music-status" data-music-status="">嘗試自動播放中；如被封鎖請按播放</span>
-</div>
+<label class="music-version-label" data-music-version-control=""><span>音樂</span><select aria-label="選擇背景音樂版本" class="music-version-select" data-music-version-select=""><option value="v17">新版 V17</option><option value="original">原版</option></select></label></div>
 <script src="assets/music.js"></script>
 </body>
 </html>
